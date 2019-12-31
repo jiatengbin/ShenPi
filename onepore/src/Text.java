@@ -4,6 +4,10 @@ public class Text {
         System.out.println("this is a text page");
         System.out.println("this is a text page");
         System.out.println("this is a text page");
+        System.out.println("this is a text page");
+        System.out.println("this is a text page");
+        System.out.println("this is a text page");
+
     }
 
 
