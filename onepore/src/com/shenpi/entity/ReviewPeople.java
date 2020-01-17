@@ -32,12 +32,39 @@ public class ReviewPeople {
         this.rpwd = rpwd;
     }
 
+    public char getRsex() {
+        return rsex;
+    }
+
+    public void setRsex(char rsex) {
+        this.rsex = rsex;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getIdCard() {
+        return idCard;
+    }
+
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
+    }
+
     @Override
     public String toString() {
         return "ReviewPeople{" +
                 "rid=" + rid +
                 ", rname='" + rname + '\'' +
                 ", rpwd='" + rpwd + '\'' +
+                ", rsex=" + rsex +
+                ", name='" + name + '\'' +
+                ", idCard='" + idCard + '\'' +
                 '}';
     }
 }
