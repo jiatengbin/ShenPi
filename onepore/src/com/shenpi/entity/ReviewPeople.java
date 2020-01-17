@@ -4,6 +4,9 @@ public class ReviewPeople {
     private int rid;//送审人id
     private  String rname;//送审人账号
     private String rpwd;//送审人密码
+    private char rsex;//送审人性别
+    private  String name;//送审人姓名
+    private  String idCard;//送审人身份证号
 
     public int getRid() {
         return rid;

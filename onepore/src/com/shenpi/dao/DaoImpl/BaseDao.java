@@ -3,8 +3,7 @@ package com.shenpi.dao.DaoImpl;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+
 
 
 public class BaseDao {
@@ -30,21 +29,21 @@ public class BaseDao {
      * @param params 传入执行SQL语句的参数列表
      * @return返回一个Result结果集
      */
-    public ResultSet query(String  sql,Object...params){
-        ResultSet rs = null;
-        try {
-            PreparedStatement prst = conn.prepareStatement(sql);
-            for (int i = 0;i<params.length;i++){
-                prst.setObject(i+1,params[i]);
-
-            }
-
-            rs=prst.executeQuery();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return rs;
-    }
+//    public ResultSet query(String  sql,Object...params){
+//        ResultSet rs = null;
+//        try {
+//            PreparedStatement prst = conn.prepareStatement(sql);
+//            for (int i = 0;i<params.length;i++){
+//                prst.setObject(i+1,params[i]);
+//
+//            }
+//
+//            rs=prst.executeQuery();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return rs;
+//    }
 
     /**
      * 更新数据库
@@ -52,19 +51,19 @@ public class BaseDao {
      * @param params 传入执行SQL语句的参数列表
      * @return返回一个Result结果集
      */
-    public int upda(String sql , Object... params){
-        int rs = 0;
-        try {
-            PreparedStatement prst = conn.prepareStatement(sql);
-            for (int i = 0; i <params.length ; i++) {
-                prst.setObject(i+1,params[i]);
-            }
-            rs = prst.executeUpdate();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return rs;
-    }
+//    public int upda(String sql , Object... params){
+//        int rs = 0;
+//        try {
+//            PreparedStatement prst = conn.prepareStatement(sql);
+//            for (int i = 0; i <params.length ; i++) {
+//                prst.setObject(i+1,params[i]);
+//            }
+//            rs = prst.executeUpdate();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return rs;
+//    }
 
 
 /**
